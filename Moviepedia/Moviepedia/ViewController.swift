@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 100
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "")
-        cell.textLabel?.text = "Row \(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! Cell
+        cell.label.text = "Row \(indexPath.row)"
         return cell
     }
     
@@ -29,7 +29,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+class Cell: UITableViewCell {
+    @IBOutlet weak var label: UILabel!
+}
