@@ -19,12 +19,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.label.text = "Row \(indexPath.row)"
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = DetailViewController(nibName: nil, bundle: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,9 +35,4 @@ class Cell: UITableViewCell {
 }
 
 class DetailViewController: UIViewController {
-    override func loadView() {
-        let view = UIView(frame: CGRect.zero)
-        view.backgroundColor = UIColor.green
-        self.view = view
-    }
 }

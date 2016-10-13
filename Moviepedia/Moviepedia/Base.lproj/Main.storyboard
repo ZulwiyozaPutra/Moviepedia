@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="791.15442278860576"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="rTM-Kh-gGp">
             <objects>
-                <viewController id="TmK-VK-cL9" sceneMemberID="viewController">
+                <viewController id="TmK-VK-cL9" customClass="DetailViewController" customModule="Moviepedia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rfM-HZ-OxD"/>
                         <viewControllerLayoutGuide type="bottom" id="8Vg-ZU-oZV"/>
