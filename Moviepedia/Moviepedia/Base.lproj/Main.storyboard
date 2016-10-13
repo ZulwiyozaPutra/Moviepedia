@@ -41,6 +41,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="vht-Zc-V9f" id="kwN-HA-LdJ"/>
+                                            <segue destination="TmK-VK-cL9" kind="show" id="u9n-mu-tNl"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -63,6 +64,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="791.15442278860576"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rTM-Kh-gGp">
+            <objects>
+                <viewController id="TmK-VK-cL9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rfM-HZ-OxD"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Vg-ZU-oZV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3vX-Rp-DiT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydf-el-smT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="791"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w8P-Ow-3vX">
